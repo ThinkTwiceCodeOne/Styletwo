@@ -44,6 +44,44 @@
   </tag>
 
   <tag>
+    <name>FormID</name>
+    <tag-class>com.thinking.machines.hr.tags.FormIDTagHandler</tag-class>
+    <description>
+        To generate form identity
+    </description>
+  </tag>
+
+  <tag>
+    <name>FormResubmitted</name>
+    <tag-class>com.thinking.machines.hr.tags.FormResubmittedTagHandler</tag-class>
+    <description>
+        To notify if form is being resubmitted
+    </description>
+  </tag>
+
+  <tag>
+    <name>Guard</name>
+    <tag-class>com.thinking.machines.hr.tags.GuardTagHandler</tag-class>
+    <description>
+        To check backdoor entry
+    </description>
+  </tag>
+
+
+ <tag>
+    <name>Module</name>
+    <tag-class>com.thinking.machines.hr.tags.ModuleTagHandler</tag-class>
+    <description>
+        To define the module
+    </description>
+    <attribute>
+        <name>name</name>
+        <required>true</required>
+	<rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag>
     <name>Designations</name>
     <tag-class>com.thinking.machines.hr.tags.DesignationsTagHandler</tag-class>
     <description>
