@@ -42,7 +42,7 @@ errorBean=new ErrorBean();
 errorBean.setError(daoException.getMessage());
 request.setAttribute("errorBean",errorBean);
 RequestDispatcher requestDispatcher;
-requestDispatcher=request.getRequestDispatcher("/DesignationEditForm.jsp");
+requestDispatcher=request.getRequestDispatcher("/ConfirmDeleteDesignation.jsp");
 requestDispatcher.forward(request,response);
 }
 }catch(Exception e)
