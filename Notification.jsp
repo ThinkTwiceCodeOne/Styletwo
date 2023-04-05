@@ -1,7 +1,9 @@
 <%@taglib uri='/WEB-INF/mytags/tmtags.tld' prefix='tm' %>
 <jsp:useBean id='messageBean' scope='request' class='com.thinking.machines.hr.beans.MessageBean'/>
-<jsp:include page='/MasterPageTopSection.jsp' />
-<h2>${messageBean.heading}</h2>
+<tm:Module name='DESIGNATION'/>
+<jsp:include page='/MasterPageTopSection.jsp'>
+<jsp:param name='module' value='DESIGNATION'/>
+</jsp:include><h2>${messageBean.heading}</h2>
 ${messageBean.message}
 <tm:If condition='${messageBean.generateButtons}'>
 <table>
